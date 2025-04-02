@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Pribadi</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>I'AM MUHAMMAD INAS LUKMAN DAFA</h1>
+      <p>NEWBIE | PEMULA | POOKIE</p>
+    </header>
+
+    <section id="about">
+      <h2>Tentang Saya</h2>
+      <img src="images/profile.jpg" alt="Foto Profil" />
+      <p>
+        Halo! Saya seorang Data Analyst yang sedang belajar pemrograman. Saya
+        suka menganalisis data dan membuat website.
+      </p>
+    </section>
+
+    <section id="portfolio">
+      <h2>Portofolio</h2>
+      <div class="project">
+        <img src="images/project1.jpg" alt="Proyek 1" />
+        <p>Analisis Data Penjualan dengan Python.</p>
+      </div>
+      <div class="project">
+        <img src="images/project2.jpg" alt="Proyek 2" />
+        <p>Visualisasi Data dengan Power BI.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Kontak</h2>
+      <p>Email: <a href="mailto:email@example.com">inaslkkj@gmail.com</a></p>
+      <p>
+        LinkedIn:
+        <a href="https://linkedin.com/in/example">linkedin.com/in/example</a>
+      </p>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+  rel="stylesheet"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Interaktif</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333;
+            color: #fff;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #6a0dad;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #8a2be2;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #555;
+            margin: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .box:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Website Interaktif</h1>
+    <button class="button" onclick="changeColor()">Klik Saya</button>
+    
+    <div class="box"></div>
+    
+    <script>
+        function changeColor() {
+            document.body.style.backgroundColor = "#444";
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Interaktif</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+        /* Gaya CSS yang baru */
+        .button {
+            padding: 10px 20px;
+            background-color: #6a0dad;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #8a2be2;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #555;
+            margin: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .box:hover {
+            transform: scale(1.1);
+        }
+        .image {
+            width: 200px;
+            height: 200px;
+            transition: transform 0.3s ease;
+        }
+        .image:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Website Interaktif</h1>
+    
+    <!-- Tombol untuk Ubah Latar -->
+    <button class="button" id="colorButton">Klik untuk Ubah Warna Latar</button>
+
+    <!-- Kotak Interaktif -->
+    <div class="box" id="boxElement"></div>
+
+    <!-- Gambar dengan Efek Hover -->
+    <img src="https://via.placeholder.com/200" alt="Image" class="image" id="imageElement">
+
+    <!-- Modal Pop-up -->
+    <button class="button" id="openModal">Buka Modal</button>
+
+    <div id="myModal" style="display:none;">
+        <div style="background-color: #fff; padding: 20px; border-radius: 10px;">
+            <p>Ini adalah modal yang interaktif!</p>
+            <button id="closeModal">Tutup</button>
+        </div>
+    </div>
+
+    <!-- Form dengan Validasi -->
+    <form id="myForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <button type="submit">Kirim</button>
+    </form>
+
+    <!-- Efek Parallax -->
+    <div id="parallax" style="height: 300px; background-color: #6a0dad; color: white;">
+        <h2>Efek Parallax!</h2>
+    </div>
+
+    <!-- Navbar Sticky -->
+    <nav id="navbar" style="background-color: #333; padding: 10px;">
+        <a href="#home" style="color: white;">Home</a>
+        <a href="#about" style="color: white;">About</a>
+        <a href="#services" style="color: white;">Services</a>
+    </nav>
+
+    <!-- JavaScript -->
+    <script>
+        // Fungsi untuk mengubah warna latar belakang
+        const colorButton = document.getElementById('colorButton');
+        colorButton.addEventListener('click', function() {
+            document.body.style.backgroundColor = "#444";
+        });
+
+        // Fungsi untuk animasi pada kotak
+        const boxElement = document.getElementById('boxElement');
+        boxElement.addEventListener('mouseover', function() {
+            boxElement.style.transform = "scale(1.2)";
+        });
+        boxElement.addEventListener('mouseout', function() {
+            boxElement.style.transform = "scale(1)";
+        });
+
+        // Fungsi untuk animasi gambar
+        const imageElement = document.getElementById('imageElement');
+        imageElement.addEventListener('mouseover', function() {
+            imageElement.style.transform = "scale(1.2)";
+        });
+        imageElement.addEventListener('mouseout', function() {
+            imageElement.style.transform = "scale(1)";
+        });
+
+        // Modal Pop-up
+        const openModalButton = document.getElementById('openModal');
+        const modal = document.getElementById('myModal');
+        const closeModalButton = document.getElementById('closeModal');
+        
+        openModalButton.addEventListener('click', function() {
+            modal.style.display = 'block'; // Menampilkan modal
+        });
+        
+        closeModalButton.addEventListener('click', function() {
+            modal.style.display = 'none'; // Menyembunyikan modal
+        });
+
+        // Validasi Form
+        const form = document.getElementById('myForm');
+        form.addEventListener('submit', function(event) {
+            const email = document.getElementById('email').value;
+            if (!email.includes('@')) {
+                alert("Email tidak valid!");
+                event.preventDefault(); // Mencegah form dikirim
+            }
+        });
+        <footer>
+      <p>&copy; 2025 Muhammad Inas Lukman Dafa</p>
+    </footer>

@@ -1,0 +1,101 @@
+/* Mengatur font global */
+body {
+  font-family: "Poppins", sans-serif; /* Ganti dengan 'Montserrat' jika diinginkan */
+  margin: 0;
+  padding: 0;
+  background-color: #000; /* Background utama hitam */
+  color: #e0e0e0; /* Teks utama warna abu-abu muda */
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #4b0082; /* Ungu gelap */
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Navigasi */
+nav {
+  background-color: #6a0dad; /* Ungu gelap */
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ffffff; /* Teks navigasi putih */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Efek transisi */
+}
+
+nav ul li a:hover {
+  color: #dda0dd; /* Ungu lebih terang saat hover */
+}
+
+/* Judul */
+h1,
+h2 {
+  color: #da70d6; /* Ungu cerah untuk judul */
+  margin: 20px 0;
+}
+
+/* Tombol */
+.button {
+  background-color: #8a2be2; /* Ungu mencolok */
+  color: #ffffff; /* Teks tombol putih */
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 5px; /* Sudut tombol melengkung */
+  transition: background-color 0.3s ease; /* Efek transisi */
+}
+
+.button:hover {
+  background-color: #9370db; /* Ungu lebih terang saat hover */
+}
+
+/* Footer */
+footer {
+  background-color: #000; /* Hitam */
+  color: #a9a9a9; /* Teks abu-abu */
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+/* Ikon media sosial */
+.social-icons a {
+  color: #a9a9a9; /* Warna ikon abu-abu */
+  margin: 0 10px;
+  transition: color 0.3s ease; /* Efek transisi */
+}
+
+.social-icons a:hover {
+  color: #da70d6; /* Ungu cerah saat hover */
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block; /* Menjadikan navigasi vertikal di mobile */
+    margin: 10px 0;
+  }
+
+  .button {
+    width: 100%; /* Tombol lebar penuh di mobile */
+  }
+}
